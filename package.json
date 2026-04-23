@@ -17,8 +17,7 @@
     "@jupyter-kit/katex-cdn": "3.0.0-rc.4",
     "@jupyter-kit/katex": "3.0.0-rc.4",
     "@jupyter-kit/executor-pyodide": "3.0.0-rc.4",
-    "@jupyter-kit/widgets": "3.0.0-rc.4",
-    "@jupyter-kit/theme-default": "3.0.0-rc.4"
+    "@jupyter-kit/widgets": "3.0.0-rc.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
