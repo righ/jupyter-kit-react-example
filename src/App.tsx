@@ -3,8 +3,9 @@ import { Notebook } from '@jupyter-kit/react';
 import type { Ipynb } from '@jupyter-kit/core';
 import { python as pythonHighlight } from '@jupyter-kit/core/langs/python';
 import { createEditorPlugin } from '@jupyter-kit/editor-codemirror';
-import { createKatexPlugin } from '@jupyter-kit/katex';
-import 'katex/dist/katex.min.css';
+import { createKatexCdnPlugin } from '@jupyter-kit/katex-cdn';
+//import { createKatexPlugin } from '@jupyter-kit/katex';
+//import 'katex/dist/katex.min.css';
 import { createWidgetsPlugin } from '@jupyter-kit/widgets';
 import {
   createPyodideExecutor,
@@ -117,7 +118,7 @@ export default function App() {
 
   const plugins = useMemo(
     () => [
-      createKatexPlugin(),
+      createKatexCdnPlugin(),
       createWidgetsPlugin(),
       createEditorPlugin({ languages: { python: pythonEditor() } }),
     ],
